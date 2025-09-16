@@ -119,7 +119,7 @@ For NVIDIA images, add something like this to your Containerfile, replacing `TAG
 
 ## Verification
 
-These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/about/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command, replacing `KERNEL_FLAVOR` with whichever kernel you are using and `RELEASE` with either `40`, `41` or `42`:
+These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/about/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command, replacing `KERNEL_FLAVOR` with whichever kernel you are using and `RELEASE` with either `40`, `41`, `42` or `43`:
 
     cosign verify --key cosign.pub ghcr.io/ublue-os/akmods:KERNEL_FLAVOR-RELEASE
 
